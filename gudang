@@ -1,0 +1,44 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ a { 
+   visibility: hidden; 
+} 
+</style>
+
+  <link rel="icon" type="image/png" href="http://tachiyomi.wap.sh/icon/gudang.jpg" sizes="16x16" style="border-radius: 100%;">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div id="image-container"></div>
+<div id="scroll"></div> 
+
+  <div class="view">
+    <nav>
+      <img class="logo" src="http://tachiyomi.wap.sh/icon/gudang.jpg">
+
+      <input class="put" type="text" id="manga-id-input" placeholder="GudangKomik">
+    </nav>
+
+<button class="tombol" id="gass"  onclick="generateURL()">Go</button>
+
+ <span class="nomor" id="chapterNumber"></span>
+
+    <button class="next" id="nextButton" style="display: none;" onclick="nextChapter()">Next &raquo;</button>
+  </div>
+
+  <div id="loading-overlay">
+    <img class="svg" src="http://tachiyomi.wap.sh/icon/overlay.svg">
+  </div>
+
+  <script>
+     var imageUrl = "https://cdn3.gudangkomik.com/";
+  </script>
+ 
+  <script src="http://tachiyomi.wap.sh/scroll.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
